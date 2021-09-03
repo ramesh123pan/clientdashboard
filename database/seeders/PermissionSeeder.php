@@ -17,8 +17,8 @@
         public function run()
         {
             $permissions = [
-                'role-list','role-create','role-edit','role-delete',
-                'admin-list','admin-create','admin-edit','admin-delete',			
+                //'role-list','role-create','role-edit','role-delete',
+                //'admin-list','admin-create','admin-edit','admin-delete',			
 			];
 			
 			
@@ -29,7 +29,7 @@
 			$role = Role::create(['guard_name' => 'admin', 'name' => 'Superadmin']);
 			$role->givePermissionTo(Permission::all());
             
-            // $role = Role::findByName('Superadmin','admin');
+            // $role = Role::findByName('Superadmin');
             // $users=Admin::all();            
             // $role->users()->attach($users);
         }

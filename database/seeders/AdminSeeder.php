@@ -4,6 +4,7 @@
 
     use Illuminate\Database\Seeder;
     use App\Models\Admin;
+	use Spatie\Permission\Models\Role;
 
     class AdminSeeder extends Seeder
     {
@@ -14,21 +15,24 @@
          */
         public function run()
         {
-            Admin::create([
-	            'first_name' => "Ramesh",
-	            'last_name' => "Kumar",
-	            'email' => "rameshkumar.kumar72@gmail.com",
-	            'password' => bcrypt("abcd1234"),
-	            'status' => 1
-	        ]);
+            // Admin::create([
+	            // 'first_name' => "Ramesh",
+	            // 'last_name' => "Kumar",
+	            // 'email' => "rameshkumar.kumar72@gmail.com",
+	            // 'password' => bcrypt("abcd1234"),
+	            // 'status' => 1
+	        // ]);
             
-            Admin::create([
+            $users=Admin::create([
 	            'first_name' => "Test",
 	            'last_name' => "User",
-	            'email' => "info@virtuxient.com",
-	            'password' => bcrypt("abcd1234"),
+	            'email' => "demo@virtuxient.com",
+	            'password' => bcrypt("admin1234"),
 	            'status' => 1
 	        ]);
+			
+			$role = Role::findByName('Admin','admin');          
+            $role->users()->attach($users);
         }
         
         //php artisan db:seed --class=AdminSeeder
