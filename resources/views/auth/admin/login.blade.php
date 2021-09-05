@@ -49,7 +49,4 @@
         <button class="btn btn-primary w-100 waves-effect waves-light" type="submit">Log In</button>
     </div>
 </form>
-<div class="mt-5 text-center">
-    <p class="text-muted mb-0">Don't have an account ? <a href="auth-register.html" class="text-primary fw-semibold"> Signup now </a> </p>
-</div>
 @endsection
