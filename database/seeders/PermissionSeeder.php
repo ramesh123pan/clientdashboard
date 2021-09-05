@@ -29,7 +29,7 @@
 			$role = Role::create(['guard_name' => 'admin', 'name' => 'Superadmin']);
 			$role->givePermissionTo(Permission::all());
             
-            // $role = Role::findByName('Superadmin');
+            // $role = Role::findByName('Superadmin','admin');
             // $users=Admin::all();            
             // $role->users()->attach($users);
         }
