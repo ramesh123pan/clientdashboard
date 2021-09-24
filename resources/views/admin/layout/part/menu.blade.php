@@ -1,5 +1,4 @@
 <ul class="metismenu list-unstyled" id="side-menu">
-	<li class="menu-title" data-key="t-menu">Menu</li>
 	<li>
 		<a href="{{route('admin.dashboard')}}">
 			<i data-feather="home"></i>
@@ -22,4 +21,11 @@
 		</a>
 	</li>
 	@endcan
+
+	<li>
+		<a href="{{route('vendors.index')}}">
+			<i data-feather="users"></i>
+			<span data-key="t-dashboard">Vendors</span>
+		</a>
+	</li>
 </ul>
