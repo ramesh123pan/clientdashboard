@@ -9,6 +9,21 @@
 		<!-- App favicon -->
 		<link rel="shortcut icon" href="{{asset('vxtheme/assets/images/favicon.ico')}}" />
 		@include('admin.layout.csslist')
+		<style type="text/css">
+			body[data-sidebar-size=sm] .navbar-brand-box{
+				padding: 0 0.5rem;
+			}
+			.logo-txt{
+				margin-left:0;
+				text-align: center;
+				display: block;
+				line-height: 1;
+			}
+			.sidebar-enable .vertical-menu{
+				top:70px;
+				padding-top: 15px;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="layout-wrapper">
@@ -18,10 +33,10 @@
 						<div class="navbar-brand-box">
 							<a href="{{route('admin.dashboard')}}" class="logo logo-dark">
 								<span class="logo-sm">
-									<img src="{{asset('vxtheme/assets/images/logo-sm.svg')}}" alt="" height="24" />
+									<img src="{{asset('vxtheme/assets/images/virtuxient-logo.png')}}" alt="" height="24" />
 								</span>
 								<span class="logo-lg">
-									<img src="{{asset('vxtheme/assets/images/logo-sm.svg')}}" alt="" height="24" /> <span class="logo-txt">{{ config('app.name', 'Laravel') }}</span>
+									<img src="{{asset('vxtheme/assets/images/virtuxient-logo.png')}}" alt="" height="24" /> <span class="logo-txt">{{ config('app.name', 'Laravel') }}</span>
 								</span>
 							</a>
 							<a href="{{route('admin.dashboard')}}" class="logo logo-light">

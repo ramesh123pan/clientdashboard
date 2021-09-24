@@ -28,18 +28,18 @@
                                 <div class="d-flex flex-column h-100">
                                     <div class="mb-4 mb-md-5 text-center">
                                         <a href="{{route('admin.login')}}" class="d-block auth-logo">
-                                            <img src="{{asset('vxtheme/assets/images/logo-sm.svg')}}" alt="" height="28" /> <span class="logo-txt">{{ config('app.name', 'Laravel') }}</span>
+                                            <img src="{{asset('vxtheme/assets/images/virtuxient-logo.png')}}" alt="" height="28" /> <span class="logo-txt">{{ config('app.name', 'Virtuxient Technologies') }}</span>
                                         </a>
                                     </div>
                                     <div class="auth-content my-auto">
                                         <div class="text-center">
                                             <h5 class="mb-0">Welcome Back !</h5>
-                                            <p class="text-muted mt-2">Sign in to continue to {{ config('app.name', 'Laravel') }}.</p>
+                                            <p class="text-muted mt-2">Sign in to continue to {{ config('app.name', 'Virtuxient Technologies') }}.</p>
                                         </div>
                                         @yield('content')
                                     </div>
                                     <div class="mt-4 mt-md-5 text-center">
-                                        <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> {{ config('app.name', 'Laravel') }}   . Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                                        <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> All Rights Reserved by Virtuxient Technologies.</p>
                                     </div>
                                 </div>
                             </div>

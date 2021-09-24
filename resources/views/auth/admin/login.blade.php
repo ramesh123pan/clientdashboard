@@ -1,5 +1,5 @@
 @extends('layouts.app_admin')
-@section('page_title', 'Admin Login')
+@section('page_title', 'Login')
 @section('content')
 <form class="mt-4 pt-2" action="{{ route('admin.login.submit') }}" method="POST">
     @csrf

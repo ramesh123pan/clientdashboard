@@ -29,7 +29,9 @@
             Route::POST('logout/', [App\Http\Controllers\Auth\Admin\LoginController::class,'logout'])->name('admin.logout');                        //==Admin Logout
             Route::get('/', [App\Http\Controllers\Admin\HomeController::class,'home'])->name('admin.dashboard');                                    //==Admin Dashboard
             
-            Route::resource('roles','App\Http\Controllers\Admin\RoleController');                                                                   //==Roles
-            Route::resource('all-admins','App\Http\Controllers\Admin\AdminController');                                    //==All Admin User
+
+            Route::resource('vendors','App\Http\Controllers\Admin\VendorController');  
+            Route::resource('roles','App\Http\Controllers\Admin\RoleController'); //==Roles
+            Route::resource('all-admins','App\Http\Controllers\Admin\AdminController');  //==All Admin User
         });
     });
