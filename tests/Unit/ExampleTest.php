@@ -17,4 +17,3 @@ class ExampleTest extends TestCase
     }
 }
 
-"Test123455"
